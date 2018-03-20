@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pet Clinical Record
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <button ion-item *ngFor="let note of notes" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+</ion-list>
+</ion-content>
